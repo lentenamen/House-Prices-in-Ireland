@@ -33,3 +33,22 @@ df = df.rename(columns={
 print(df["county"].head())
 print(df["eircode"].head())
 print(df["price"].head())
+
+df["price"] = (
+    df["price"]
+    .str.replace("€", "", regex=False)
+    .str.replace(",", "", regex=False)
+    .astype(float)
+)
+
+print(df["price"].head())
+
+df["date"] = pd.to_datetime(
+    df["date"],
+    format="%d/%m/%Y"
+)
+df["year"] = df["date"].dt.year
+df["month"] = df["date"].dt.month
+
+df["county"] = df["county"].str.lstrip()
+print(df["county"].head())
