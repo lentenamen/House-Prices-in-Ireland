@@ -1,4 +1,5 @@
 from data_loader import load_data 
+from preprocessing import standardize
 
 def main():
     # Path to the raw dataset
@@ -6,6 +7,7 @@ def main():
 
     # Load the data 
     df = load_data(file_path)
+    df = standardize(df)
     print(df.head())
 
     if df is None:

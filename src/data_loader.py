@@ -31,4 +31,4 @@ def load_data(file_path):
 
     print("Data loaded successfully")
 
-    return df 
+    return df
