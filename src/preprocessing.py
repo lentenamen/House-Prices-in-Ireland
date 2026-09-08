@@ -24,7 +24,7 @@ def standardize(df):
 
     df["county"] = df["county"].str.strip().str.lower()
 
-    df["price"] = (
+    df["price"] = pd.to_numeric(
         df["price"]
         .str.replace("€", "", regex=False)
         .str.replace(",", "", regex=False)
