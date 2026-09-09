@@ -1,1 +1,2 @@
-data/raw/PPR-ALL.csv
+data/raw/
+__pycache__/

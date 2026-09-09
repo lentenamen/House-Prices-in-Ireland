@@ -15,10 +15,7 @@ def standardize(df):
     })
     
 
-    df["date"] = pd.to_datetime(
-        df["date"],
-        format="%d/%m/%Y"
-    )
+    df["date"] = pd.to_datetime(df["date"],format="%d/%m/%Y",errors="coerce")
     df["year"] = df["date"].dt.year
     df["month"] = df["date"].dt.month
 
