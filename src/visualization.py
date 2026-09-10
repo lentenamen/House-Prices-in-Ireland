@@ -7,10 +7,10 @@ def visualisation1(annual):
     ACCENT = "#2b5c8f"  # Main median line color (e.g., steel blue)
     BLUE = "#1f77b4"  # Mean line color
     GREEN = "#2ca02c"  # Positive YoY percentage bars
-    RED = "#d62728"  # Negative YoY percentage bars & post-crash highlight
-    PURPLE = "#9467bd"  # COVID-19 highlight
+    RED = "#c21e1e"  # Negative YoY percentage bars & post-crash highlight
+    PURPLE = "#a45ee9"  # COVID-19 highlight
 
-    sns.set_theme(style="whitegrid", palette="muted")
+    sns.set_theme(style="whitegrid")
 
     fig, axes = plt.subplots(
         2, 1, figsize=(14, 10), gridspec_kw={"height_ratios": [2, 1]}
@@ -109,6 +109,6 @@ def visualisation1(annual):
 
     plt.tight_layout(pad=2)
     plt.savefig(
-        "outputs/national_price_trend.png", dpi=150, bbox_inches="tight", facecolor="#0f1117"
+        "outputs/national_price_trend.png", dpi=150, bbox_inches="tight"
     )
     plt.show()
