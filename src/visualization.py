@@ -109,6 +109,6 @@ def visualisation1(annual):
 
     plt.tight_layout(pad=2)
     plt.savefig(
-        "outputs/national_price_trend.png", dpi=150, bbox_inches="tight"
+        "outputs/images/national_price_trend.png", dpi=150, bbox_inches="tight"
     )
     plt.show()
