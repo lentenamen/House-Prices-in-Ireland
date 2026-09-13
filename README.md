@@ -5,6 +5,7 @@ This repo will used to predict house prices in Ireland based off of their featur
 
 
 Project Structure
+``` text
 House-Prices-in-Ireland/
 │
 ├── data/
@@ -27,3 +28,4 @@ House-Prices-in-Ireland/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
