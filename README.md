@@ -1,10 +1,18 @@
 # House-Prices-in-Ireland
+
+# Project Description
 This repo will used to predict house prices in Ireland based off of their features and location.
 
+## Dataset
 
+- **Name:** PPR-ALL
+- **Source:** [https://www.kaggle.com/datasets/danbraswell/us-tornado-dataset-1950-2021](https://www.propertypriceregister.ie/)
+- **Size:** 800K Rows, 11 Columns
+- **Format:** CSV
 
 
 Project Structure
+``` text
 House-Prices-in-Ireland/
 │
 ├── data/
@@ -27,3 +35,4 @@ House-Prices-in-Ireland/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
